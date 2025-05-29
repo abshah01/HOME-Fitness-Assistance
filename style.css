@@ -1,0 +1,92 @@
+
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f6f9fc, #e0f7fa);
+  color: #333;
+  animation: fadeIn 1s ease-in;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1.app-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00796b;
+  animation: popIn 0.5s ease;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.popup {
+  padding: 20px;
+  background: #e0f7fa;
+  border: 2px solid #00796b;
+  border-radius: 10px;
+  margin-top: 30px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
